@@ -1,0 +1,36 @@
+{
+  "signup": [
+    {
+      "name": "vishal",
+      "email": "vishal@123",
+      "mobile": "7865412365",
+      "password": "123456",
+      "id": 1
+    },
+    {
+      "name": "Harry",
+      "email": "harry@123",
+      "mobile": "5698325689",
+      "password": "123456",
+      "id": 2
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "name": "Gajanan Tea Center",
+      "email": "gajanan@123",
+      "mobile": "9856326598",
+      "address": "Pune",
+      "services": "Food"
+    },
+    {
+      "id": 2,
+      "name": "Vishal Restaurent",
+      "email": "vishal@123",
+      "mobile": "7896546565",
+      "address": "Chikhli",
+      "services": "Food Service"
+    }
+  ]
+}

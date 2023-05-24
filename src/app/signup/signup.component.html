@@ -1,0 +1,52 @@
+<div class="abc">
+
+    <div class="container">
+        <div class="row col-md-6 col-sm-6">
+            <div class="col-md-12">
+               <div class="card">
+                   <div class="text-center">
+                       <h1>Signup Form</h1>
+    
+                       <hr>
+                    </div>
+                    <form [formGroup]="signupForm" (ngSubmit)="signup()">
+                        <div class="mb-3">
+                            <label  class="form-label">Name</label>
+                            <input formControlName="name" required placeholder="Enter Name" type="name" class="form-control" id="exampleInputEmail1" >
+                            <span style="color: red;" *ngIf="name && name.invalid && (name.dirty || name.touched)">Name is required</span>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Mobile</label>
+                            <input formControlName="mobile" required placeholder="Enter Mobile No" type="mobile" class="form-control" id="exampleInputMobile1">
+                            <span style="color: red;" *ngIf="mobile && mobile.invalid && (mobile.dirty || mobile.touched)">Mobile number is required</span>
+                        </div>
+                        <div class="mb-3">
+                          <label  class="form-label">Email address</label>
+                          <input formControlName="email" placeholder="Enter EmailId" type="email" class="form-control" id="exampleInputEmailAddress1">
+                          <span style="color: red;" *ngIf="email && email.invalid && (email.dirty || email.touched)">Email address is required</span>
+                        </div>
+                        <div class="mb-3">
+                          <label  class="form-label">Password</label>
+                          <input formControlName="password" placeholder="Create Password" type="password" class="form-control" id="exampleInputPassword1">
+                          <span style="color: red;" *ngIf="password && password.invalid && (password.dirty || password.touched)">Password is required</span>
+                        </div>
+                        
+    
+                        <button [disabled]="signupForm.invalid" type="submit" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Signup</button>
+                  
+                      </form>
+                      <a routerLink="/login">Already Member ? Click to Login !</a>
+                      
+               </div>  
+            </div>
+    
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
